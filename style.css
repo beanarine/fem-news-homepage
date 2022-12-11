@@ -15,7 +15,9 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+ul,
+ol {
   margin: 0;
 }
 
@@ -110,6 +112,7 @@ body {
   font-size: var(--fs-500);
   font-family: var(--ff-main);
   font-weight: 400;
+  margin: 0 1rem;
 }
 
 h1 {
@@ -129,8 +132,21 @@ button {
   color: var(--lm-button-text-color);
 
   border-style: solid;
-  border-radius: 0.5rem;
   border-color: var(--lm-button-background-color);
+
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  word-spacing: 0;
+
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+
+  cursor: pointer;
+}
+
+.menu {
+  padding: 0;
 }
 
 .accent {
@@ -150,13 +166,57 @@ button {
   color: var(--dm-h3-color);
 }
 
+.accent > * {
+  margin: 0 1rem;
+}
+
+.accent div {
+  padding: 1.5rem 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--neutral-600);
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 1rem 0;
+}
+
+nav {
+  display: grid;
+  justify-items: right;
+}
+
+.logo,
+.menu {
+  width: 2.5rem;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: var(--lm-h1-color);
+}
+
+.navbar ul li {
+  display: none;
+}
+
 .hero {
   display: none;
+}
+
+.popular article a {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
 }
 
 @media (min-width: 686px) {
