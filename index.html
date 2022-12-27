@@ -20,12 +20,12 @@
         <div class="logo">
           <a href="#"><img src="images/logo.svg" alt="logo" /></a>
         </div>
-        <nav class="navbar">
+        <nav class="primary-nav">
           <button class="mobile-menu">
             <img src="./images/icon-menu.svg" alt="Mobile menu button" />
             <span class="visual-hidden"> Menu </span>
           </button>
-          <ul role="list">
+          <ul role="list" class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">New</a></li>
             <li><a href="#">Popular</a></li>
@@ -51,32 +51,32 @@
       </main>
       <aside id="news" class="accent" role="list">
         <h2>New</h2>
-        <div role="listitem">
-          <a href="#">
-            <h3>Hydrogen VS Electric Cars</h3>
-            <p>Will hydrogen-fueld cars ever catch up to EVs?</p>
-          </a>
-        </div>
-
-        <div role="listitem">
-          <a href="#">
-            <h3>The Downsides of AI Artistry</h3>
-            <p>
-              What are the possible adverse efects of on-demand AI image
-              generation?
-            </p>
-          </a>
-        </div>
-
-        <div role="listitem">
-          <a href="#">
-            <h3>Is VC Funding Drying Up?</h3>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </a>
-        </div>
+        <ul class="vertical-list" id="news-ticker" role="list">
+          <li class="bulletin" id="news-item">
+            <a href="#">
+              <h3>Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </a>
+          </li>
+          <li class="bulletin" id="news-item">
+            <a href="#">
+              <h3>The Downsides of AI Artistry</h3>
+              <p>
+                What are the possible adverse efects of on-demand AI image
+                generation?
+              </p>
+            </a>
+          </li>
+          <li class="bulletin" id="news-item">
+            <a href="#">
+              <h3>Is VC Funding Drying Up?</h3>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </a>
+          </li>
+        </ul>
       </aside>
       <section id="popular" class="bait" role="list">
         <article role="listitem">
