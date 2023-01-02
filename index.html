@@ -15,110 +15,118 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="logo">
-          <a href="#"><img src="images/logo.svg" alt="logo" /></a>
-        </div>
-        <nav class="primary-nav">
-          <button class="mobile-menu">
-            <img src="./images/icon-menu.svg" alt="Mobile menu button" />
-            <span class="visual-hidden"> Menu </span>
-          </button>
-          <ul role="list" class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Popular</a></li>
-            <li><a href="#">Trending</a></li>
-            <li><a href="#">Categories</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <img class="hero" src="/images/image-web-3-desktop.jpg" />
-        <img class="hero-mobile" src="/images/image-web-3-mobile.jpg" />
-        <div class="headline">
-          <h1>The Bright Future of Web 3.0?</h1>
-          <div class="cta">
-            <p>
-              We dive into the next evolution of the web that claims to put the
-              power of the platforms back into the hands of the people. But is
-              it really fulfilling its promise?
-            </p>
-            <button class="button">Read more</button>
+    <div class="overlay">
+      <div class="container">
+        <header>
+          <div class="logo">
+            <a href="#"><img src="images/logo.svg" alt="logo" /></a>
           </div>
-        </div>
-      </main>
-      <aside id="news" class="accent" role="list">
-        <h2>New</h2>
-        <ul class="vertical-list" id="news-ticker" role="list">
-          <li class="bulletin" id="news-item">
-            <a href="#">
-              <h3>Hydrogen VS Electric Cars</h3>
-              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-            </a>
-          </li>
-          <li class="bulletin" id="news-item">
-            <a href="#">
-              <h3>The Downsides of AI Artistry</h3>
+          <nav class="primary-nav">
+            <button class="mobile-menu" id="open-menu">
+              <img src="./images/icon-menu.svg" alt="Mobile menu button" />
+              <span class="visual-hidden"> Menu </span>
+            </button>
+            <dialog class="menu" id="sidebar">
+              <button class="mobile-menu" id="close-menu">
+                <img src="./images/icon-menu.svg" alt="Mobile menu button" />
+                <span class="visual-hidden"> Menu </span>
+              </button>
+              <ul role="list" class="">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categories</a></li>
+              </ul>
+            </dialog>
+          </nav>
+        </header>
+        <main>
+          <img class="hero" src="/images/image-web-3-desktop.jpg" />
+          <img class="hero-mobile" src="/images/image-web-3-mobile.jpg" />
+          <div class="headline">
+            <h1>The Bright Future of Web 3.0?</h1>
+            <div class="cta">
               <p>
-                What are the possible adverse efects of on-demand AI image
-                generation?
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
               </p>
-            </a>
-          </li>
-          <li class="bulletin" id="news-item">
+              <button class="button">Read more</button>
+            </div>
+          </div>
+        </main>
+        <aside id="news" class="accent" role="list">
+          <h2>New</h2>
+          <ul class="vertical-list" id="news-ticker" role="list">
+            <li class="bulletin" id="news-item">
+              <a href="#">
+                <h3>Hydrogen VS Electric Cars</h3>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </a>
+            </li>
+            <li class="bulletin" id="news-item">
+              <a href="#">
+                <h3>The Downsides of AI Artistry</h3>
+                <p>
+                  What are the possible adverse efects of on-demand AI image
+                  generation?
+                </p>
+              </a>
+            </li>
+            <li class="bulletin" id="news-item">
+              <a href="#">
+                <h3>Is VC Funding Drying Up?</h3>
+                <p>
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <section id="popular" class="bait" role="list">
+          <article role="listitem">
             <a href="#">
-              <h3>Is VC Funding Drying Up?</h3>
-              <p>
-                Private funding by VC firms is down 50% YOY. We take a look at
-                what that means.
-              </p>
+              <div class="popular-article">
+                <img src="/images/image-retro-pcs.jpg" alt="" />
+                <div class="details">
+                  <h2>01</h2>
+                  <h4>Reviving Retro PCs</h4>
+                  <p>What happens when old PCs are given modern upgrades?</p>
+                </div>
+              </div>
             </a>
-          </li>
-        </ul>
-      </aside>
-      <section id="popular" class="bait" role="list">
-        <article role="listitem">
-          <a href="#">
-            <div class="popular-article">
-              <img src="/images/image-retro-pcs.jpg" alt="" />
-              <div class="details">
-                <h2>01</h2>
-                <h4>Reviving Retro PCs</h4>
-                <p>What happens when old PCs are given modern upgrades?</p>
+          </article>
+          <article role="listitem">
+            <a href="#">
+              <div class="popular-article">
+                <img src="/images/image-top-laptops.jpg" alt="" />
+                <div class="details">
+                  <h2>02</h2>
+                  <h4>Top 10 Laptops of 2022</h4>
+                  <p>Our best picks for various needs and budgets.</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </article>
-        <article role="listitem">
-          <a href="#">
-            <div class="popular-article">
-              <img src="/images/image-top-laptops.jpg" alt="" />
-              <div class="details">
-                <h2>02</h2>
-                <h4>Top 10 Laptops of 2022</h4>
-                <p>Our best picks for various needs and budgets.</p>
+            </a>
+          </article>
+          <article role="listitem">
+            <a href="#">
+              <div class="popular-article">
+                <img src="/images/image-gaming-growth.jpg" alt="" />
+                <div class="details">
+                  <h2>03</h2>
+                  <h4>The Growth of Gaming</h4>
+                  <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </article>
-        <article role="listitem">
-          <a href="#">
-            <div class="popular-article">
-              <img src="/images/image-gaming-growth.jpg" alt="" />
-              <div class="details">
-                <h2>03</h2>
-                <h4>The Growth of Gaming</h4>
-                <p>How the pandemic has sparked fresh opportunities.</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      </section>
-      <footer></footer>
+            </a>
+          </article>
+        </section>
+        <footer></footer>
+      </div>
     </div>
 
-    <script src="" async defer></script>
+    <script src="main.js" async defer></script>
   </body>
 </html>
